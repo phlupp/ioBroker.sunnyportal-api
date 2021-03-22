@@ -1,0 +1,82 @@
+{
+	"common": {
+		"name": "sunnyportal-api",
+		"version": "0.0.1",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"zh-cn": "首次出版"
+			}
+		},
+		"title": "SunnyPortal-API",
+		"titleLang": {
+			"en": "SunnyPortal-API",
+			"de": "SunnyPortal-API",
+			"ru": "SunnyPortal-API",
+			"pt": "SunnyPortal-API",
+			"nl": "SunnyPortal-API",
+			"fr": "SunnyPortal-API",
+			"it": "SunnyPortal-API",
+			"es": "SunnyPortal-API",
+			"pl": "SunnyPortal-API",
+			"zh-cn": "SunnyPortal API"
+		},
+		"desc": {
+			"en": "fetch data from SMA SunnyPortal API",
+			"de": "Daten von der SMA SunnyPortal-API abrufen",
+			"ru": "получать данные из SMA SunnyPortal API",
+			"pt": "obter dados da API SMA SunnyPortal",
+			"nl": "gegevens ophalen uit de SMA SunnyPortal API",
+			"fr": "récupérer les données de l'API SMA SunnyPortal",
+			"it": "recuperare i dati da SMA SunnyPortal API",
+			"es": "obtener datos de la API de SMA SunnyPortal",
+			"pl": "pobrać dane z SMA SunnyPortal API",
+			"zh-cn": "从SMA SunnyPortal API提取数据"
+		},
+		"authors": [
+			"phlupp <iobroker.sunnyportal-api@phlupp.net>"
+		],
+		"keywords": [
+			"SMA",
+			"Sunnyportal",
+			"Portal",
+			"API",
+			"Inverter",
+			"SunnyBoy",
+			"SunnyIsland"
+		],
+		"license": "MIT",
+		"platform": "Javascript/Node.js",
+		"main": "main.js",
+		"icon": "sunnyportal-api.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/phlupp/ioBroker.sunnyportal-api/master/admin/sunnyportal-api.png",
+		"readme": "https://github.com/phlupp/ioBroker.sunnyportal-api/blob/master/README.md",
+		"loglevel": "info",
+		"mode": "daemon",
+		"type": "iot-systems",
+		"compact": true,
+		"connectionType": "cloud",
+		"dataSource": "poll",
+		"materialize": true,
+		"dependencies": [
+			{
+				"js-controller": ">=2.0.0"
+			}
+		]
+	},
+	"native": {
+		"option1": true,
+		"option2": "42"
+	},
+	"objects": [],
+	"instanceObjects": []
+}

@@ -1,0 +1,62 @@
+{
+  "name": "iobroker.sunnyportal-api",
+  "version": "0.0.1",
+  "description": "fetch data from SMA SunnyPortal API",
+  "author": {
+    "name": "phlupp",
+    "email": "iobroker.sunnyportal-api@phlupp.net"
+  },
+  "homepage": "https://github.com/phlupp/ioBroker.sunnyportal-api",
+  "license": "MIT",
+  "keywords": [
+    "SMA",
+    "Sunnyportal",
+    "Portal",
+    "API",
+    "Inverter",
+    "SunnyBoy",
+    "SunnyIsland"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phlupp/ioBroker.sunnyportal-api"
+  },
+  "dependencies": {
+    "@iobroker/adapter-core": "^2.4.0"
+  },
+  "devDependencies": {
+    "@iobroker/testing": "^2.4.4",
+    "@types/chai": "^4.2.15",
+    "@types/chai-as-promised": "^7.1.3",
+    "@types/gulp": "^4.0.8",
+    "@types/mocha": "^8.2.2",
+    "@types/node": "^14.14.35",
+    "@types/proxyquire": "^1.3.28",
+    "@types/sinon": "^9.0.11",
+    "@types/sinon-chai": "^3.2.5",
+    "axios": "^0.21.1",
+    "chai": "^4.3.4",
+    "chai-as-promised": "^7.1.1",
+    "eslint": "^7.22.0",
+    "gulp": "^4.0.2",
+    "mocha": "^8.3.2",
+    "proxyquire": "^2.1.3",
+    "sinon": "^10.0.0",
+    "sinon-chai": "^3.5.0",
+    "typescript": "^4.2.3"
+  },
+  "main": "main.js",
+  "scripts": {
+    "test:js": "mocha --config test/mocharc.custom.json \"{!(node_modules|test)/**/*.test.js,*.test.js,test/**/test!(PackageFiles|Startup).js}\"",
+    "test:package": "mocha test/package --exit",
+    "test:unit": "mocha test/unit --exit",
+    "test:integration": "mocha test/integration --exit",
+    "test": "npm run test:js && npm run test:package",
+    "check": "tsc --noEmit -p tsconfig.check.json",
+    "lint": "eslint"
+  },
+  "bugs": {
+    "url": "https://github.com/phlupp/ioBroker.sunnyportal-api/issues"
+  },
+  "readmeFilename": "README.md"
+}
