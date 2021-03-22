@@ -14,28 +14,28 @@ systemDictionary = {
 		"pl": "Ustawienia adaptera dla sunnyportal-api",
 		"zh-cn": "sunnyportal-api的适配器设置"
 	},
-	"option1": {
-		"en": "option1",
-		"de": "Option 1",
-		"ru": "Опция 1",
-		"pt": "Opção 1",
-		"nl": "Optie 1",
-		"fr": "Option 1",
-		"it": "opzione 1",
-		"es": "Opción 1",
-		"pl": "opcja 1",
-		"zh-cn": "选项1"
+	"sunnyPortalEmail": {
+		"en": "email",
+	        "de": "Email",
+	        "ru": "электронное письмо",
+	        "pt": "o email",
+	        "nl": "e-mail",
+	        "fr": "email",
+	        "it": "e-mail",
+	        "es": "Email",
+	        "pl": "e-mail",
+	        "zh-cn": "电子邮件"
 	},
-	"option2": {
-		"en": "option2",
-		"de": "Option 2",
-		"ru": "option2",
-		"pt": "opção 2",
-		"nl": "Optie 2",
-		"fr": "Option 2",
-		"it": "opzione 2",
-		"es": "opcion 2",
-		"pl": "Opcja 2",
-		"zh-cn": "选项2"
-	}
+	"sunnyPortalPassword": {
+	        "en": "password",
+	        "de": "Passwort",
+	        "ru": "пароль",
+	        "pt": "senha",
+	        "nl": "wachtwoord",
+	        "fr": "mot de passe",
+	        "it": "parola d'ordine",
+	        "es": "contraseña",
+	        "pl": "hasło",
+	        "zh-cn": "密码"
+	}	
 };
