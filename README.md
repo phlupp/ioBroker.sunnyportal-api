@@ -23,13 +23,13 @@ fetch data from SMA Sunny Portal API
 ## Credits
 Inspired by Marvin Caspar [ioBroker.sunnyportal](https://github.com/marvincaspar/ioBroker.sunnyportal/)
 
-## API Informations
+## API Information
 [SMA Developer Docs](https://developer.sma.de/sma-apis.html)
 
 ## License
 MIT License
 
-Copyright (c) 2021 phlupp <iobroker.sunnyportal-api@phlupp.net>
+Copyright (c) 2021 phlupp <info@phlupp.net>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
