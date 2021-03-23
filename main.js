@@ -111,6 +111,8 @@ class SunnyportalApi extends utils.Adapter {
 
 		////result = await this.checkGroupAsync("admin", "admin");
 		////this.log.info("check group user admin group admin: " + result);
+		
+		this.getAuthCode()
 	}
 
 	/**
@@ -185,6 +187,11 @@ class SunnyportalApi extends utils.Adapter {
 		
 
 		auth.authRequest(this.config.client_id, this.config.client_secret)
+			.then(
+				(authCode, state) => {
+					await this.setStateAsync("connection.AuthCode", { val: authCode, ack: true });
+				});
+
 	}
 
 }
