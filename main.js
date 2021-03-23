@@ -7,6 +7,8 @@
 // The adapter-core module gives you access to the core ioBroker functions
 // you need to create an adapter
 const utils = require("@iobroker/adapter-core");
+const auth = require(__dirname + "/lib/auth.js");
+const request = require("request");
 
 // Load your modules here, e.g.:
 // const fs = require("fs");
@@ -98,17 +100,17 @@ class SunnyportalApi extends utils.Adapter {
 		////await this.setStateAsync("testVariable", { val: true, ack: true });
 
 		// same thing, but the state is deleted after 30s (getState will return null afterwards)
-		await this.setStateAsync("connection.AuthCode", { val: "Ein Wert", ack: true, expire: 30 });
-		await this.setStateAsync("connection.AccessToken", { val: "Ein Wert 1", ack: true, expire: 30 });
-		await this.setStateAsync("connection.RefreshToken", { val: "Ein Wert 2", ack: true, expire: 30 });
+		await this.setStateAsync("connection.AuthCode", { val: "Ein Wert", ack: true });
+		await this.setStateAsync("connection.AccessToken", { val: "Ein Wert 1", ack: true });
+		await this.setStateAsync("connection.RefreshToken", { val: "Ein Wert 2", ack: true });
 
 
 		// examples for the checkPassword/checkGroup functions
-		let result = await this.checkPasswordAsync("admin", "iobroker");
-		this.log.info("check user admin pw iobroker: " + result);
+		////let result = await this.checkPasswordAsync("admin", "iobroker");
+		////this.log.info("check user admin pw iobroker: " + result);
 
-		result = await this.checkGroupAsync("admin", "admin");
-		this.log.info("check group user admin group admin: " + result);
+		////result = await this.checkGroupAsync("admin", "admin");
+		////this.log.info("check group user admin group admin: " + result);
 	}
 
 	/**
@@ -154,10 +156,10 @@ class SunnyportalApi extends utils.Adapter {
 	onStateChange(id, state) {
 		if (state) {
 			// The state was changed
-			this.log.info(`state ${id} changed: ${state.val} (ack = ${state.ack})`);
+			this.log.debug(`state ${id} changed: ${state.val} (ack = ${state.ack})`);
 		} else {
 			// The state was deleted
-			this.log.info(`state ${id} deleted`);
+			this.log.debug(`state ${id} deleted`);
 		}
 	}
 
