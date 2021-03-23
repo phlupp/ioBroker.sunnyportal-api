@@ -189,7 +189,7 @@ class SunnyportalApi extends utils.Adapter {
 		auth.authRequest(this.config.client_id, this.config.client_secret)
 			.then(
 				(authCode, state) => {
-					await this.setStateAsync("connection.AuthCode", { val: authCode, ack: true });
+					this.setStateAsync("connection.AuthCode", { val: authCode, ack: true });
 				});
 
 	}
