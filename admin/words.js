@@ -14,7 +14,7 @@ systemDictionary = {
 		"pl": "Ustawienia adaptera dla sunnyportal-api",
 		"zh-cn": "sunnyportal-api的适配器设置"
 	},
-	"sunnyPortalEmail": {
+	"client_id": {
 		"en": "email",
 	        "de": "Email",
 	        "ru": "электронное письмо",
@@ -26,7 +26,7 @@ systemDictionary = {
 	        "pl": "e-mail",
 	        "zh-cn": "电子邮件"
 	},
-	"sunnyPortalPassword": {
+	"client_secret": {
 	        "en": "password",
 	        "de": "Passwort",
 	        "ru": "пароль",

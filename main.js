@@ -38,7 +38,7 @@ class SunnyportalApi extends utils.Adapter {
 
 		// The adapters config (in the instance object everything under the attribute "native") is accessible via
 		// this.config:
-		this.log.info("SunnyPortal User: " + this.config.sunnyPortalEmail);
+		this.log.info("SunnyPortal User: " + this.config.client_id);
 
 		/*
 		For every state in the system there has to be also an object of type state
@@ -180,6 +180,12 @@ class SunnyportalApi extends utils.Adapter {
 	// 		}
 	// 	}
 	// }
+	
+	async getAuthCode(){
+		
+
+		auth.authRequest(this.config.client_id, this.config.client_secret)
+	}
 
 }
 
