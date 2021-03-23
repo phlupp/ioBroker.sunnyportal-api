@@ -2,10 +2,7 @@
   "name": "iobroker.sunnyportal-api",
   "version": "0.0.1",
   "description": "fetch data from SMA SunnyPortal API",
-  "author": {
-    "name": "phlupp",
-    "email": "iobroker.sunnyportal-api@phlupp.net"
-  },
+  "author": "phlupp <iobroker.sunnyportal-api@phlupp.net>",
   "homepage": "https://github.com/phlupp/ioBroker.sunnyportal-api",
   "license": "MIT",
   "keywords": [
@@ -19,7 +16,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/phlupp/ioBroker.sunnyportal-api"
+    "url": "git+https://github.com/phlupp/ioBroker.sunnyportal-api.git"
   },
   "dependencies": {
     "@iobroker/adapter-core": "^2.4.0"
@@ -58,5 +55,8 @@
   "bugs": {
     "url": "https://github.com/phlupp/ioBroker.sunnyportal-api/issues"
   },
-  "readmeFilename": "README.md"
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  }
 }
