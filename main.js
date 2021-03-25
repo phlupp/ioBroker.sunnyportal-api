@@ -191,11 +191,11 @@ class SunnyportalApi extends utils.Adapter {
 					this.setStateAsync("connection.AuthCode", { val: authCode, ack: true });
 				},
 				(statusPost) => {
-        	adapter.log.error("Error AuthUriGet: " + statusPost);
+        	this.log.error("Error AuthUriGet: " + statusPost);
         }
 			)
 			.catch(() => {
-	    	adapter.log.debug("auth uri not successfull");
+	    	this.log.debug("auth uri not successfull");
 			});
 
 	}
